@@ -1,6 +1,6 @@
-package net._5tingray.stingUtils.math.geometry;
+package net._5tingray.stingUtils.math.algebra.linear;
 
-import net._5tingray.stingUtils.math.algebra.numeric.Maths;
+import net._5tingray.stingUtils.math.arithmetic.Maths;
 
 public class Vector2f {
 	

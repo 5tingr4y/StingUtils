@@ -1,4 +1,4 @@
-package net._5tingray.stingUtils.math.algebra.numeric;
+package net._5tingray.stingUtils.math.arithmetic;
 
 /**
  * 
