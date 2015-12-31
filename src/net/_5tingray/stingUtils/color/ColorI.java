@@ -35,6 +35,16 @@ public interface ColorI<T extends ColorI<?>> {
 	
 	public Color toAWTColor();
 	
+	public int getRedInt();
+	public int getGreenInt();
+	public int getBlueInt();
+	public int getAlphaInt();
+	
+	public float getRedFloat();
+	public float getGreenFloat();
+	public float getBlueFloat();
+	public float getAlphaFloat();
+	
 	public T interpolate(ColorI<?> otherColor);
 	
 	/**

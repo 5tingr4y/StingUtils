@@ -42,6 +42,8 @@ public class Color4i implements ColorI<Color4i> {
 		
 		r = r_; g = g_; b = b_; a = a_;
 	}
+	
+	//converters
 
 	@Override
 	public Color3i toColor3i() {
@@ -67,7 +69,51 @@ public class Color4i implements ColorI<Color4i> {
 	public Color toAWTColor() {
 		return new Color(r, g, b, a);
 	}
+	
+	//value getters
+	
+	@Override
+	public int getRedInt() {
+		return r;
+	}
 
+	@Override
+	public int getGreenInt() {
+		return g;
+	}
+
+	@Override
+	public int getBlueInt() {
+		return b;
+	}
+
+	@Override
+	public int getAlphaInt() {
+		return a;
+	}
+
+	@Override
+	public float getRedFloat() {
+		return r / 255f;
+	}
+
+	@Override
+	public float getGreenFloat() {
+		return g / 255f;
+	}
+
+	@Override
+	public float getBlueFloat() {
+		return b / 255f;
+	}
+
+	@Override
+	public float getAlphaFloat() {
+		return a / 255f;
+	}
+	
+	//operations
+	
 	@Override
 	public Color4i interpolate(ColorI<?> otherColor) {
 		Color4i color4i = otherColor.toColor4i();
