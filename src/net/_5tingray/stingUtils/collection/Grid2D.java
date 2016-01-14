@@ -27,9 +27,9 @@ import java.util.Iterator;
 
 public class Grid2D<T> implements Grid2DI<T> {
 	
-	protected final Object[][] content;
+	protected Object[][] content;
 	
-	public final int width, height;
+	protected int width, height;
 	
 	public Grid2D(int width_, int height_) {
 		this(width_, height_, null);
