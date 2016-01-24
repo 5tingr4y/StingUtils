@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package net._5tingray.stingUtils.math.arithmetic;
+package net._5tingr4y.stingUtils.math.arithmetic;
 
 /**
  * 

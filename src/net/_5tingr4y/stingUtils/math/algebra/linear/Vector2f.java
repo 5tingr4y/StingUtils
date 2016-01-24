@@ -21,9 +21,9 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package net._5tingray.stingUtils.math.algebra.linear;
+package net._5tingr4y.stingUtils.math.algebra.linear;
 
-import net._5tingray.stingUtils.math.arithmetic.Maths;
+import net._5tingr4y.stingUtils.math.arithmetic.Maths;
 
 public class Vector2f {
 	
