@@ -45,12 +45,12 @@ public class Color3f implements ColorI<Color3f> {
 	
 	@Override
 	public Color3i toColor3i() {
-		return new Color3i((int) Math.round(r * 255), (int) Math.round(g * 255), (int) Math.round(b * 255));
+		return new Color3i(Math.round(r * 255), Math.round(g * 255), Math.round(b * 255));
 	}
 
 	@Override
 	public Color4i toColor4i() {
-		return new Color4i((int) Math.round(r * 255), (int) Math.round(g * 255), (int) Math.round(b * 255), 255);
+		return new Color4i(Math.round(r * 255), Math.round(g * 255), Math.round(b * 255), 255);
 	}
 
 	@Override
@@ -72,17 +72,17 @@ public class Color3f implements ColorI<Color3f> {
 	
 	@Override
 	public int getRedInt() {
-		return (int) Math.round(r * 255);
+		return Math.round(r * 255);
 	}
 
 	@Override
 	public int getGreenInt() {
-		return (int) Math.round(g * 255);
+		return Math.round(g * 255);
 	}
 
 	@Override
 	public int getBlueInt() {
-		return (int) Math.round(b * 255);
+		return Math.round(b * 255);
 	}
 
 	@Override

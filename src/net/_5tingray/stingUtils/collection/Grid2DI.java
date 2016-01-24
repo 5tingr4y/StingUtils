@@ -25,9 +25,9 @@ package net._5tingray.stingUtils.collection;
 
 public interface Grid2DI<T> extends Iterable<T> {
 	
-	public int getWidth();
-	public int getHeight();
+	int getWidth();
+	int getHeight();
 	
-	public T get(int x, int y);
-	public T set(int x, int y, T tile);
+	T get(int x, int y);
+	T set(int x, int y, T tile);
 }

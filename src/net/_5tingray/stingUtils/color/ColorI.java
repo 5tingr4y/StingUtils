@@ -27,25 +27,25 @@ import java.awt.Color;
 
 public interface ColorI<T extends ColorI<?>> {
 	
-	public Color3i toColor3i();
-	public Color4i toColor4i();
+	Color3i toColor3i();
+	Color4i toColor4i();
 	
-	public Color3f toColor3f();
-	public Color4f toColor4f();
+	Color3f toColor3f();
+	Color4f toColor4f();
 	
-	public Color toAWTColor();
+	Color toAWTColor();
 	
-	public int getRedInt();
-	public int getGreenInt();
-	public int getBlueInt();
-	public int getAlphaInt();
+	int getRedInt();
+	int getGreenInt();
+	int getBlueInt();
+	int getAlphaInt();
 	
-	public float getRedFloat();
-	public float getGreenFloat();
-	public float getBlueFloat();
-	public float getAlphaFloat();
+	float getRedFloat();
+	float getGreenFloat();
+	float getBlueFloat();
+	float getAlphaFloat();
 	
-	public T interpolate(ColorI<?> otherColor);
+	T interpolate(ColorI<?> otherColor);
 	
 	/**
 	 * 
@@ -53,5 +53,5 @@ public interface ColorI<T extends ColorI<?>> {
 	 * @param weight - weight of this color
 	 * @return
 	 */
-	public T interpolate(ColorI<?> otherColor, float weight);
+	T interpolate(ColorI<?> otherColor, float weight);
 }

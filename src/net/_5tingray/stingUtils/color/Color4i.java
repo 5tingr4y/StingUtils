@@ -125,10 +125,10 @@ public class Color4i implements ColorI<Color4i> {
 		if(weight <= 0) return this;
 		if(weight >= 255) return otherColor.toColor4i();
 		Color4i color4i = otherColor.toColor4i();
-		return new Color4i((int) Math.round(r*(1-weight) + color4i.r*weight),
-				(int) Math.round(g*weight + color4i.g*(1-weight)),
-				(int) Math.round(b*weight + color4i.b*(1-weight)),
-				(int) Math.round(a*weight + color4i.a*(1-weight)));
+		return new Color4i(Math.round(r*(1-weight) + color4i.r*weight),
+				Math.round(g*weight + color4i.g*(1-weight)),
+				Math.round(b*weight + color4i.b*(1-weight)),
+				Math.round(a*weight + color4i.a*(1-weight)));
 	}
 
 }

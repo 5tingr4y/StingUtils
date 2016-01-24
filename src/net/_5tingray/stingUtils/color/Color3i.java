@@ -123,9 +123,9 @@ public class Color3i implements ColorI<Color3i> {
 		if(weight <= 0) return this;
 		if(weight >= 255) return otherColor.toColor3i();
 		Color3i color3i = otherColor.toColor3i();
-		return new Color3i((int) Math.round(r*(1-weight) + color3i.r*weight),
-				(int) Math.round(g*weight + color3i.g*(1-weight)),
-				(int) Math.round(b*weight + color3i.b*(1-weight)));
+		return new Color3i(Math.round(r*(1-weight) + color3i.r*weight),
+				Math.round(g*weight + color3i.g*(1-weight)),
+				Math.round(b*weight + color3i.b*(1-weight)));
 	}
 
 }
