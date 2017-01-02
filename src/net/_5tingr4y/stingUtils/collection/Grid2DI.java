@@ -24,10 +24,10 @@
 package net._5tingr4y.stingUtils.collection;
 
 public interface Grid2DI<T> extends Iterable<T> {
-	
-	int getWidth();
-	int getHeight();
-	
-	T get(int x, int y);
-	T set(int x, int y, T tile);
+
+    int getWidth();
+    int getHeight();
+
+    T get(int x, int y);
+    T set(int x, int y, T tile);
 }

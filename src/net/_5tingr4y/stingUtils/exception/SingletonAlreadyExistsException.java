@@ -29,17 +29,17 @@ package net._5tingr4y.stingUtils.exception;
  */
 public class SingletonAlreadyExistsException extends RuntimeException {
 
-	private static final long serialVersionUID = -488116361200712522L;
+    private static final long serialVersionUID = -488116361200712522L;
 
-	public SingletonAlreadyExistsException() {
-		super();
-	}
-	
-	public SingletonAlreadyExistsException(String message) {
-		super(message);
-	}
-	
-	public SingletonAlreadyExistsException(Throwable cause) {
-		super(cause);
-	}
+    public SingletonAlreadyExistsException() {
+        super();
+    }
+
+    public SingletonAlreadyExistsException(String message) {
+        super(message);
+    }
+
+    public SingletonAlreadyExistsException(Throwable cause) {
+        super(cause);
+    }
 }

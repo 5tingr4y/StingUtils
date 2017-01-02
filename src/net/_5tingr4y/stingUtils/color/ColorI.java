@@ -26,32 +26,39 @@ package net._5tingr4y.stingUtils.color;
 import java.awt.Color;
 
 public interface ColorI<T extends ColorI<?>> {
-	
-	Color3i toColor3i();
-	Color4i toColor4i();
-	
-	Color3f toColor3f();
-	Color4f toColor4f();
-	
-	Color toAWTColor();
-	
-	int getRedInt();
-	int getGreenInt();
-	int getBlueInt();
-	int getAlphaInt();
-	
-	float getRedFloat();
-	float getGreenFloat();
-	float getBlueFloat();
-	float getAlphaFloat();
-	
-	T interpolate(ColorI<?> otherColor);
-	
-	/**
-	 * 
-	 * @param otherColor
-	 * @param weight weight of this color
-	 * @return
-	 */
-	T interpolate(ColorI<?> otherColor, float weight);
+
+    //converters
+    Color3i toColor3i();
+    Color4i toColor4i();
+
+    Color3f toColor3f();
+    Color4f toColor4f();
+
+    Color toAWTColor();
+
+    //getters
+    int getRedInt();
+    int getGreenInt();
+    int getBlueInt();
+    int getAlphaInt();
+
+    float getRedFloat();
+    float getGreenFloat();
+    float getBlueFloat();
+    float getAlphaFloat();
+
+    /**
+     * Interpolates this color with the given color, with this color being weighted according to the given weight
+     * @param otherColor the other color
+     * @return the interpolation between this color and the other color
+     */
+    T interpolate(ColorI<?> otherColor);
+
+    /**
+     * Interpolates this color with the given color, with this color being weighted according to the given weight
+     * @param otherColor the other color
+     * @param weight weight of this color
+     * @return the interpolation between this color and the other color
+     */
+    T interpolate(ColorI<?> otherColor, float weight);
 }
