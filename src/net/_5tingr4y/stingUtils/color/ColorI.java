@@ -50,7 +50,7 @@ public interface ColorI<T extends ColorI<?>> {
 	/**
 	 * 
 	 * @param otherColor
-	 * @param weight - weight of this color
+	 * @param weight weight of this color
 	 * @return
 	 */
 	T interpolate(ColorI<?> otherColor, float weight);

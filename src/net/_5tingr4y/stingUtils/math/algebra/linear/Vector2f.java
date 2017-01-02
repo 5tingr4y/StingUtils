@@ -58,9 +58,8 @@ public class Vector2f {
 	public float getY() {
 		return y;
 	}
-	
-	@Override
-	public Vector2f clone() {
+
+	public Vector2f copy() {
 		return new Vector2f(x, y);
 	}
 	
@@ -88,10 +87,7 @@ public class Vector2f {
 	
 	@Override
 	public boolean equals(Object o) {
-		if(o == this) return true;
-		if(!(o instanceof Vector2f)) return false;
-		
-		return ((Vector2f)o).x == x && ((Vector2f)o).y == y;
+		return o == this || (o instanceof Vector2f && ((Vector2f)o).x == x && ((Vector2f)o).y == y);
 	}
 	
 	@Override
@@ -234,8 +230,8 @@ public class Vector2f {
 	
 	/**
 	 * 
-	 * @param v - the other Vector
-	 * @param percentage - the percentage weight of THIS Vector
+	 * @param v the other Vector
+	 * @param percentage the percentage weight of THIS Vector
 	 * @return
 	 */
 	public Vector2f interpolateI(Vector2f v, float percentage) {

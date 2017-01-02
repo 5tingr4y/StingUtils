@@ -61,9 +61,8 @@ public class Vector3f {
 	public float getZ() {
 		return z;
 	}
-	
-	@Override
-	public Vector3f clone() {
+
+	public Vector3f copy() {
 		return new Vector3f(x, y, z);
 	}
 	
@@ -78,10 +77,7 @@ public class Vector3f {
 	
 	@Override
 	public boolean equals(Object o) {
-		if(o == this) return true;
-		if(!(o instanceof Vector3f)) return false;
-		
-		return ((Vector3f)o).x == x && ((Vector3f)o).y == y && ((Vector3f)o).z == z;
+		return o == this || (o instanceof Vector3f && ((Vector3f)o).x == x && ((Vector3f)o).y == y && ((Vector3f)o).z == z);
 	}
 	
 	@Override
@@ -203,8 +199,8 @@ public class Vector3f {
 	
 	/**
 	 * 
-	 * @param v - the other Vector
-	 * @param percentage - the percentage weight of THIS Vector
+	 * @param v the other Vector
+	 * @param percentage the percentage weight of THIS Vector
 	 * @return
 	 */
 	public Vector3f interpolateI(Vector3f v, float percentage) {
