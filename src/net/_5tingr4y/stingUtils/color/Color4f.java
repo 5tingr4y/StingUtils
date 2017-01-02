@@ -125,7 +125,7 @@ public class Color4f implements ColorI<Color4f> {
 		if(weight <= 0) return this;
 		if(weight >= 1) return otherColor.toColor4f();
 		Color4f color4f = otherColor.toColor4f();
-		return new Color4f(r*(1-weight) + color4f.r*weight,
+		return new Color4f(r*weight + color4f.r*(1-weight),
 				g*weight + color4f.g*(1-weight),
 				b*weight + color4f.b*(1-weight),
 				a*weight + color4f.a*(1-weight));

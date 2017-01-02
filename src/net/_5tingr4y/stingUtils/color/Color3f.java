@@ -123,7 +123,7 @@ public class Color3f implements ColorI<Color3f> {
 		if(weight <= 0) return this;
 		if(weight >= 1) return otherColor.toColor3f();
 		Color3f color3f = otherColor.toColor3f();
-		return new Color3f(r*(1-weight) + color3f.r*weight,
+		return new Color3f(r*weight + color3f.r*(1-weight),
 				g*weight + color3f.g*(1-weight),
 				b*weight + color3f.b*(1-weight));
 	}
